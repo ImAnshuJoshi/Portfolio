@@ -1,0 +1,30 @@
+.nextbtn{
+    /* color:white; */
+    color:white;
+    border:1px solid white;
+    position:absolute;
+    background: none;
+    margin-top:200px;
+    font-size: 20px;
+    padding:20px;
+    transform: translateX(-800px);
+    cursor:pointer;
+    
+}
+.nextbtn:hover{
+    color:black;
+    border:1px solid white;
+    position:absolute;
+    background: white;
+    margin-top:200px;
+    font-size: 20px;
+    padding:20px;
+    transform: translateX(-800px);
+    cursor:pointer;
+    animation-duration:0.5s;
+    animation-name: anima;
+}
+@keyframes anima{
+    0%{background-color: black;color:white;}
+    100%{background-color: white;color:black}
+}

@@ -1,7 +1,7 @@
 *{
     margin:0;
     padding:0;
-    background-color:black;
+    background-color:#151921;
 }
 .name{
     color:white;
@@ -33,6 +33,18 @@
     font-weight: lighter;
     font-family: 'Montserrat', sans-serif;
 }
+.circle1{
+    /* position:fixed;   
+    z-index:-1;
+    background:linear-gradient(60deg,#0094FF,#97FF57);
+    width:600px;
+    height:600px;
+    border-radius:50%;
+    filter:blur(10px);
+    position:absolute;
+    left:-130px;
+    top:-100px; */
+}
 .content{
     font-family: 'IBM Plex Sans', sans-serif;
     font-size: 100px;
@@ -42,5 +54,51 @@
     align-items: center;
     justify-content: center;
     /* transform: translateY(-30px) */
-    height: 70vh;
+    height: 80vh;
+}
+.connect{
+    display: flex;
+    justify-content: space-evenly;
+    width:20%;
+    margin-left: 40%;
+}
+.icon_connect{
+    transform: scale(1.8);
+    margin-bottom: 40px;
+}
+.centerit{
+    display: flex;
+    justify-content: space-around;
+    width:100%;
+    margin-left: 355%;
+}
+.alpha{
+    font-size: 30px;
+    padding:1px;
+}
+.card{
+    background-color:white;
+    opacity:0.2;
+    height:500px;
+    width:500px;
+    margin-left:160px;
+    border-radius: 10px;
+}
+/* .aboutme{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+} */
+.about_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom:30px;
+}
+.about__description{
+    color:white;
+    font-size: 30px;
+    font-family: 'IBM Plex Sans', sans-serif;
+    width:30%;
+    font-weight: bold;
 }

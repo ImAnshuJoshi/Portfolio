@@ -7,6 +7,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Aos from "aos";
+import mypic from './assets/mypic.png'
 
 function Home() {
   useEffect(()=>{
@@ -49,7 +50,7 @@ function Home() {
         <span style={{ color: 'red' }} >
         <Typewriter
   options={{
-    strings: ['eveloper ;', 'esigner*__*','umbAss'],
+    strings: ['eveloper ;', 'esigner*__*'],
     autoStart: true,
     loop: true,
   }}
@@ -96,8 +97,9 @@ function Home() {
             </div>
             </div>
         <div className="about_content">
-        <div className="card" data-aos="fade-right">
-        </div>
+        {/* <div className="card" data-aos="fade-right"> */}
+          <img src={mypic} data-aos="fade-right" className="mypic" alt="" />
+        {/* </div> */}
         <div className="about__description" data-aos="fade-left">
             I am a web developer and experienced in front-end development which also makes me a UI designer. I am currently doing my BTech in computer-science from ABV-IIITM, Gwalior , Madhya Pradesh.I am currently in my 2nd year of Engineering.
         </div>

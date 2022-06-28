@@ -1,0 +1,10 @@
+.centerit3{
+    font-family: 'IBM Plex Sans', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vertical-timeline{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

@@ -14,3 +14,27 @@ li{
     font-size: 30px;
     padding:1px;
 }
+.skills_icons{
+    display: flex;
+    align-items: center;
+    /* justify-content: space-around; */
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 30px;
+    width:90%;
+    overflow-x: hidden;
+    margin-left: 5%;
+}
+.icon{
+    margin:30px;
+    width:70px;
+}
+.icon:hover{
+    animation:html 1s ease-in-out;
+}
+@keyframes html {
+    0%{opacity:0;}
+    30%{opacity:1;}
+    60%{opacity:0.3;}
+    100%{opacity:1;}
+}

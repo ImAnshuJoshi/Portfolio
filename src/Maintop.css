@@ -1,6 +1,6 @@
 .Main__top{
     height:100vh;
-    background-color: rgb(0, 0, 0);
+    background-color: #151921;
 }
 .animated-paragraph{
     font-size: 100px;
@@ -13,7 +13,7 @@
     font-weight: bold;
     color:white;
     font-family: 'Gloria Hallelujah', cursive;
-    font-style: italic;
+    /* font-style: italic; */
 }
 .dot1{
     color: red;

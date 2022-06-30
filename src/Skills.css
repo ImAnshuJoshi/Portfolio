@@ -38,8 +38,3 @@ li{
     60%{opacity:0.3;}
     100%{opacity:1;}
 }
-.icon .pop{
-    /* visibility: hidden; */
-    background-color:white;
-    color:white;
-}

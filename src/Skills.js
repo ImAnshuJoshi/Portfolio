@@ -43,10 +43,7 @@ function Skills() {
           <div >
           <div className='skills_icons'>
           <div className='dot1'>.</div>
-          <div>
             <img src={html} alt="" className='icon html'/>
-            <span className="pop">HTML</span>
-          </div>
             <div className='dot2'>.</div>
             <img src={css} alt="" className='icon'/>
             <div className='dot3'>.</div>

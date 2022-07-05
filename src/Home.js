@@ -9,6 +9,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import Aos from "aos";
 import mypic from './assets/mypic.png'
 
+
 function Home() {
   useEffect(()=>{
     Aos.init({duration:2000});
@@ -105,6 +106,7 @@ function Home() {
         </div>
         </div>
       </div>
+
     </div>
   )
 }

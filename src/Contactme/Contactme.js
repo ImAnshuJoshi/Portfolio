@@ -1,11 +1,22 @@
-import React from 'react'
+import React , { useRef } from 'react'
 import './Contactme.css'
 import phoneCall from '../assets/phone-call.png'
 import email from '../assets/email.png'
 import location from '../assets/location.png'
 // import user from '../assets/user.png'
+import emailjs from '@emailjs/browser';
 
 function Contactme() {
+  const form = useRef();
+  function sendEmail(e){
+    emailjs.sendForm('gmail', 'template_ppq410q', form.current, 'iWxx2qNPr0xxujnnI')
+    .then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+    e.target.reset();
+  }
   return (
     <div>
         <div class="nameOwn centerit2" style={{ marginBotton: "200px" }}>
@@ -44,17 +55,19 @@ function Contactme() {
           </div>
         </div>
         <div className="sendmsg">
-          <div className="contact-right name-input">
+          <form action="" onSubmit={sendEmail} ref={form}>
+          <div className="contact-right name-input" name="name">
           Your Name
-          {/* <img src={user} alt="" className="contact-img" style={{position:'absolute'}}/> */}
-          <input type="text" className="contact-right-input email-input" />
+          <input type="text" className="contact-right-input email-input" name="from_name" />
           Your email
-          {/* <img src={email} alt="" className="contact-img" style={{position:'absolute'}}/> */}
-          <input type="text" className="contact-right-input message-input" />
+          <input type="text" className="contact-right-input message-input" name="email"/>
+          Subject
+          <input type="text" className="contact-right-input message-input" name="subject"/>
           Your message
-          <textarea id="" cols="30" rows="10" style={{border:"1px solid lightblue"}}></textarea>
-          <button className="contact-btn">Submit</button>
+          <textarea id="" cols="30" rows="10" style={{border:"1px solid lightblue"}} name="message"></textarea>
+          <button className="contact-btn" >Submit</button>
           </div>
+          </form>
         </div>
       </div>
     </div>

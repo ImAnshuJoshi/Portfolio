@@ -30,13 +30,14 @@ function education() {
           </div>
           <div style={{color:'white'}}>
       </div>
-      <VerticalTimeline className="vertical_timeline">
+      <VerticalTimeline className="vertical_timeline .vertical-timeline.vertical-timeline-custom-line">
+        ::before
       <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'white', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  white' }}
     date="2021-Present"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'yellow', color: 'yellow' }}
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title centerit3" style={{color:"yellow"}}>First sem passed </h3>
@@ -50,7 +51,7 @@ function education() {
     contentStyle={{ background: 'white', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid  white' }}
     date="2019-2021"
-    iconStyle={{ background: 'rgb(33, 150, 243)', color: '#fff' }}
+    iconStyle={{ background: 'maroon', color: '#fff' }}
     // icon={<WorkIcon />}
   >
     <h3 className="vertical-timeline-element-title centerit3" style={{color:"red"}}>12th Passed </h3>
@@ -64,7 +65,7 @@ function education() {
     contentStyle={{ background: 'white', color: '#fff' }}
     contentArrowStyle={{ borderRight: '7px solid white' }}
     date="2009-2019"
-    iconStyle={{ background: '#151921', color: '#151921' }}
+    iconStyle={{ background: 'lightblue', color: '#151921' }}
 
     // icon={<WorkIcon />}
   >

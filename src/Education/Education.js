@@ -30,8 +30,9 @@ function education() {
           </div>
           <div style={{color:'white'}}>
       </div>
-      <VerticalTimeline className="vertical_timeline .vertical-timeline.vertical-timeline-custom-line">
-        ::before
+        <div className="VerticalLine"></div>
+      <VerticalTimeline className="vertical_timeline .vertical-timeline .vertical-timeline-custom-line" lineColor="#151921">
+        {/* ::before */}
       <VerticalTimelineElement
     className="vertical-timeline-element--work"
     contentStyle={{ background: 'white', color: '#fff' }}

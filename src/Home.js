@@ -57,6 +57,14 @@ function Home() {
   }}
 />
         </span>
+          {/* <h1 class="title">
+          I am a&nbsp;
+        <div className="rotate-words">
+          <span>UI Designer</span>
+          <span >UX Designer</span>
+          <span >Web Developer</span>
+        </div>
+          </h1> */}
       </main>
       <div  className="connect">
       <div className="dot4">.</div>
@@ -76,27 +84,25 @@ function Home() {
       <div className="circle1"></div>
       <div className="circle2"></div>
       <div className="about_me">
-      <div className="name">
-          <div class="nameOwn">
-      <ul className="Name__list centerit" data-aos="flip-left">
-              <li className="dot4 alpha">.</li>
-              <li className="alpha">A</li>
-              <li className="dot1 alpha">.</li>
-              <li className="alpha">B</li>
-              <li className="dot2 alpha">.</li>
-              <li className="alpha">O</li>
-              <li className="dot3 alpha">.</li>
-              <li className="alpha ">U</li>
-              <li className="dot4 alpha">.</li>
-              <li className="alpha ">T</li>
-              <li className='dot2 alpha'>.</li>
-              <li className="alpha">M</li>
-              <li className="dot1 alpha">.</li>
-              <li className="alpha">E</li>
-              <li className="dot4 alpha">.</li>
+      <div class="nameOwn centerit2" >
+            <ul className="Name__list" data-aos=" fade-right">
+              <li className="dot1">.</li>
+              <li>A</li>
+              <li className="dot2">.</li>
+              <li>B</li>
+              <li className="dot3">.</li>
+              <li>O</li>
+              <li className="dot4">.</li>
+              <li>U</li>
+              <li className='dot2'>.</li>
+              <li>T</li>
+              <li className="dot1">.</li>
+              <li>M</li>
+              <li className="dot2">.</li>
+              <li>E</li>
+              <li className="dot3">.</li>
             </ul>
-            </div>
-            </div>
+          </div>
         <div className="about_content">
         {/* <div className="card" data-aos="fade-right"> */}
           <img src={mypic} data-aos="fade-right" className="mypic" alt="" />

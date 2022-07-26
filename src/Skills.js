@@ -18,9 +18,9 @@ import premierepro from './assets/premiere-pro.png';
 import bash from './assets/gnu-bash.png';
 
 function Skills() {
-  useEffect(()=>{
-    Aos.init({duration:2000});
-  },[]);
+  // useEffect(()=>{
+  //   Aos.init({duration:2000});
+  // },[]);
   return (
     <div>
        <div class="nameOwn centerit2" >
@@ -43,33 +43,33 @@ function Skills() {
           <div >
           <div className='skills_icons'>
           <div className='dot1'>.</div>
-            <img src={html} alt="" className='icon html'/>
+          <div><img src={html} alt="" className='icon html'/><div className='skill_name'>HTML</div></div>
             <div className='dot2'>.</div>
-            <img src={css} alt="" className='icon'/>
+            <div><img src={css} alt="" className='icon'/><div className='skill_name'>CSS</div></div>
             <div className='dot3'>.</div>
-            <img src={js} alt="" className='icon'/>
+            <div><img src={js} alt="" className='icon'/><div className='skill_name js'>JAVASCRIPT</div></div>
             <div className='dot4'>.</div>
-            <img src={nodejs} alt="" className='icon'/>
+            <div><img src={nodejs} alt="" className='icon'/><div className='skill_name'>NODEJS</div></div>
             <div className='dot1'>.</div>
-            <img src={react} alt="" className='icon'/>
+            <div><img src={react} alt="" className='icon'/><div className='skill_name'>REACT</div></div>
             <div className='dot2'>.</div>
-            <img src={mysql} alt="" className='icon'/>
+            <div><img src={mysql} alt="" className='icon'/><div className='skill_name'>MYSQL</div></div>
             <div className='dot3'>.</div>
-            <img src={postgre} alt="" className='icon'/>
+            <div><img src={postgre} alt="" className='icon'/><div className='skill_name'>POSTGRES</div></div>
             <div className='dot'>.</div>
-            <img src={cpp} alt="" className='icon'/>
+            <div><img src={cpp} alt="" className='icon'/><div className='skill_name'>C++</div></div>
             <div className='dot2'>.</div>
-            <img src={git} alt="" className='icon'/>
+            <div><img src={git} alt="" className='icon'/><div className='skill_name'>GIT</div></div>
             <div className='dot3'>.</div>
-            <img src={github} alt="" className='icon'/>
+            <div><img src={github} alt="" className='icon'/><div className='skill_name'>Github</div></div>
             <div className='dot3'>.</div>
-            <img src={figma} alt="" className='icon'/>
+            <div><img src={figma} alt="" className='icon'/><div className='skill_name'>FIGMA</div></div>
             <div className='dot2'>.</div>
-            <img src={photoshop} alt="" className='icon'/>
+            <div><img src={photoshop} alt="" className='icon'/><div className='skill_name ps'>PHOTOSHOP</div></div>
             <div className='dot1'>.</div>
-            <img src={premierepro} alt="" className='icon'/>
+            <div><img src={premierepro} alt="" className='icon'/><div className='skill_name pp'>PREMIERE PRO</div></div>
             <div className='dot3'>.</div>
-            <img src={bash} alt="" className='icon'/>
+            <div><img src={bash} alt="" className='icon'/><div className='skill_name'>BASH</div></div>
             <div className='dot4'>.</div>
           </div>
       </div>

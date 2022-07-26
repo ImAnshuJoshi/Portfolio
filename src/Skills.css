@@ -30,11 +30,44 @@ li{
     width:70px;
 }
 .icon:hover{
-    animation:html 1s ease-in-out;
+    cursor:pointer;
+    animation:html 0.5s ease-in-out;
 }
 @keyframes html {
+    0%{opacity:1;}
+    100%{opacity:0.3;}
+}
+
+.skill_name{
+    font-family: 'Gloria Hallelujah', cursive;
+
+    position:absolute;
+    color:white;
+    transform: translate(42px,-40px);
+    /* background-color: rgb(188, 182, 0); */
+    background: none;
+    visibility: hidden;
+}
+
+.icon:hover{
+    
+    opacity:0.3;
+
+}
+.icon:hover~.skill_name{
+    visibility: visible;
+    animation:icons 0.5s ease-in-out;
+}
+@keyframes icons {
     0%{opacity:0;}
-    30%{opacity:1;}
-    60%{opacity:0.3;}
     100%{opacity:1;}
+}
+.js{
+    transform: translate(18px,-40px);
+}
+.ps{
+    transform: translate(24px,-40px);
+}
+.pp{
+    transform: translate(14px,-40px);
 }

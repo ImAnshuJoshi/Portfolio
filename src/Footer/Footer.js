@@ -1,14 +1,7 @@
 import React from 'react'
-import {useState} from 'react'
 import './Footer.css'
-import Picker from 'emoji-picker-react';
 
 function Footer() {
-  const [chosenEmoji, setChosenEmoji] = useState(null);
-
-  const onEmojiClick = (event, emojiObject) => {
-    setChosenEmoji(emojiObject);
-  };
   return (
     <div>
         <div className="foot" style={{color:"red"}}>

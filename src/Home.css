@@ -47,7 +47,7 @@
 }
 .content{
     font-family: 'IBM Plex Sans', sans-serif;
-    font-size: 100px;
+    font-size: 90px;
     font-weight: bold;
     color:white;
     display: flex;
@@ -65,19 +65,6 @@
 .icon_connect{
     transform: scale(1.8);
     margin-bottom: 40px;
-}
-.centerit{
-    /* display: flex;
-    justify-content: space-around;
-    width:100%;
-    margin-left: 355%; */
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 325%;
-    /* width:100%; */
 }
 .alpha{
     font-size: 30px;
@@ -123,5 +110,106 @@
      */
      /* border:1px solid rgb(255, 255, 255); */
      /* box-shadow: 0 0 8px 8px white inset; */
-     box-shadow: 7px 7px 7px 7px rgba(255, 255, 255, 0.2), 7px 7px 7px 7px rgba(255, 255, 255, 0.2);
+     box-shadow: 0 7px 7px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+
+/***********************THE NEW ANIMATION STARTS***********************/
+.title{
+    /* position: relative; */
+}
+.rotate-words{
+    display: inline;
+}
+.rotate-words span{
+    width:max-content;
+    position: absolute;
+    background-color: rgba(0, 45, 42, 0.992);
+    padding-inline:10px;
+    /* opacity:0; */
+    transform-origin:10% 75%;
+    /* animation : animate2 12s linear infinte; */
+}
+
+@keyframes animate2 {
+    5%{
+        opacity:1;
+    }
+    10%,20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%{
+        opacity: 0;
+        transform: translateY(90px) rotate(10deg);
+    }
+}
+
+.rotate-words span:nth-child(1){
+    animation:one 4s linear;
+    animation-delay:0s;
+}
+@keyframes one {
+    5%{
+        opacity:1;
+    }
+    10%,20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%,100%{
+        opacity: 0;
+        transform: translateY(90px) rotate(10deg);
+    }
+}
+.rotate-words span:nth-child(2){
+    animation:two 4s linear;
+    animation-delay:4s;
+}
+@keyframes two {
+    0%{
+        opacity:0;
+    }
+    5%{
+        opacity:1;
+    }
+    10%,20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%,100%{
+        opacity: 0;
+        transform: translateY(90px) rotate(10deg);
+    }
+}
+.rotate-words>span:nth-child(3){
+    animation:three 4s linear;
+    animation-delay:8s;
+}
+@keyframes three {
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity:1;
+    }
+    10%,20%{
+        opacity: 1;
+        transform: rotate(3deg);
+    }
+    15%{
+        transform: rotate(-1deg);
+    }
+    25%,100%{
+        opacity: 0;
+        transform: translateY(90px) rotate(10deg);
+    }
 }

@@ -12,7 +12,16 @@
     margin-right: auto;
 }
 .contact-box:hover{
+    animation:borderanimate 0.5s linear;
     box-shadow: 0 7px 7px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+}
+@keyframes borderanimate {
+    0%{
+        box-shadow:none;
+    }
+    100%{
+        box-shadow: 0 7px 7px 0 rgba(255, 255, 255, 0.2), 0 6px 20px 0 rgba(255, 255, 255, 0.19);
+    }
 }
 .contact-box{
     display: flex;
@@ -60,4 +69,9 @@
 }
 input,textarea{
     color:white;
+}
+@media only screen and (max-width: 810px){
+    .contact-box:hover{
+        width:80vw;
+    }
 }

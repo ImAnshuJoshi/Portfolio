@@ -47,15 +47,17 @@ function Home() {
         </div>
       </nav>
       <main className="content">
-        I am a <span style={{ color: 'red' }}>&nbsp;D</span>
+        I am a&nbsp;<span className="me">
+          {/* <span style={{ color: 'red' }}>&nbsp;D</span> */}
         <span style={{ color: 'red' }} >
         <Typewriter
   options={{
-    strings: ['eveloper ;', 'esigner*__*'],
+    strings: ['Developer ;', 'Designer*__*'],
     autoStart: true,
     loop: true,
   }}
 />
+</span>
         </span>
           {/* <h1 class="title">
           I am a&nbsp;
@@ -105,9 +107,9 @@ function Home() {
           </div>
         <div className="about_content">
         {/* <div className="card" data-aos="fade-right"> */}
-          <img src={mypic} data-aos="fade-right" className="mypic" alt="" />
+          <img src={mypic} data-aos="fade-up-right" className="mypic" alt="" />
         {/* </div> */}
-        <div className="about__description" data-aos="fade-left">
+        <div className="about__description" data-aos="fade-down-left">
             I am a web developer and experienced in front-end development which also makes me a UI designer. I am currently doing my BTech in computer-science from ABV-IIITM, Gwalior , Madhya Pradesh.I am currently in my 2nd year of Engineering.
         </div>
         </div>

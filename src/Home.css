@@ -64,7 +64,9 @@
 }
 .icon_connect{
     transform: scale(1.8);
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
+    margin:40px;
+    margin-top:0px;
 }
 .alpha{
     font-size: 30px;
@@ -91,14 +93,14 @@
 }
 .about__description{
     color:white;
-    font-size: 30px;
+    font-size: 2vw;
     font-family: 'IBM Plex Sans', sans-serif;
     width:30%;
     font-weight: bold;
 }
 .mypic{
-    width:500px;
-    height:450px;
+    width:30%;
+    /* height:30%; */
     border-radius: 50%; 
     /* box-shadow: 4px 4px 4px 4px rgb(126, 126, 126); */
     border:4px solid rgb(126, 126, 126,0.2);
@@ -130,7 +132,7 @@
     /* animation : animate2 12s linear infinte; */
 }
 
-@keyframes animate2 {
+/* @keyframes animate2 {
     5%{
         opacity:1;
     }
@@ -212,4 +214,42 @@
         opacity: 0;
         transform: translateY(90px) rotate(10deg);
     }
+} */
+/******************RESPONSIVE********************/
+
+@media only screen and (max-width: 810px) {
+
+        .name{
+            font-size:20px;
+            display: flex;
+            flex-direction: column;
+        }
+        .college{
+            font-size: 10px;
+        }
+        .content{
+            font-size: 10px;
+            overflow-x: hidden;
+            display: none;
+        }
+        .connect{
+            margin-top: 30px;
+        }
+        .about_content{
+            display: flex;
+            flex-direction: column;
+            margin:30px;
+            /* justify-content: center; */
+        }
+        .mypic{
+            width:50%;
+        }
+        .about__description{
+            font-size: 20px;
+            margin-top:30px;
+            width:100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
 }

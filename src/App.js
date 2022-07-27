@@ -19,7 +19,9 @@ function App() {
         <div className="app_body">
           <BrowserRouter>
           <Routes>
-            <Route path="/Home" element={<><Home/><Skills/><Education/><Contactme/><Footer2/></>}/>
+            <Route path="/Home" element={<><Home/><Skills/><Education/>
+            {/* <Contactme/> */}
+            <Footer2/></>}/>
         </Routes>
           <Routes>
             <Route path="/" element={<Maintop/>}/>

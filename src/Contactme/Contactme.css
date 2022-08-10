@@ -74,4 +74,13 @@ input,textarea{
     .contact-box:hover{
         width:80vw;
     }
+    .contact-box{
+        display: flex;
+        flex-direction: column;
+        height:100%;
+    }
+    .con-details{
+        display: flex;
+        align-items: center;
+    }
 }

@@ -19,15 +19,21 @@ function App() {
         <div className="app_body">
           <BrowserRouter>
           <Routes>
-            <Route path="/Home" element={<><Home/><Skills/><Education/>
-            {/* <Contactme/> */}
+            <Route path="/" element={<>
+              <div className="circle1"></div>
+       <div className="circle2"></div>
+            <Home/>
+            <Skills/>
+            <Education/>
+            <Contactme/>
             <Footer2/></>}/>
         </Routes>
           <Routes>
-            <Route path="/" element={<Maintop/>}/>
+            {/* <Route path="/" element={<Maintop/>}/> */}
         </Routes>
         </BrowserRouter>  
        </div>
+       
     </div>
   );
 }

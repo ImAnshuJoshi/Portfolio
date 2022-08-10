@@ -1,16 +1,17 @@
 import React,{useEffect} from 'react';
 import './Home.css'
+import {Link, useNavigate} from 'react-router-dom';
 // import { Typewriter } from 'react-simple-typewriter';
 // import Typewriter from 'typewriter-effect/dist/core';
 import Typewriter from 'typewriter-effect';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Contactme from './Contactme/Contactme';
 import Aos from "aos";
 import mypic from './assets/mypic.png'
-
-
 function Home() {
+  const navigation = useNavigate();
   useEffect(()=>{
     Aos.init({duration:2000});
   },[]);
@@ -41,7 +42,7 @@ function Home() {
               <li>I</li>
             </ul>
           </div>
-          <div className='college'>
+          <div className='college not-res'>
             CURRENTLY STUDYING @ABV-IIITM , GWALIOR
           </div>
         </div>
@@ -68,7 +69,7 @@ function Home() {
         </div>
           </h1> */}
       </main>
-      <div  className="connect">
+      <div  className="connect web-connect">
       <div className="dot4">.</div>
       <a href="https://www.instagram.com/imanshujoshi/" style={{ color: 'grey' }}>
       <InstagramIcon className="icon_connect"/>
@@ -114,7 +115,28 @@ function Home() {
         </div>
         </div>
       </div>
-
+          <div className="responsive-card">
+          <img src={mypic} className="mypic" alt="" />
+          <div className="whatami-res">
+            I am into web development and web designing.
+          </div>
+          <div className="connect-res-div">
+          <a href="https://www.instagram.com/imanshujoshi/" style={{ color: 'grey' }} className="connect-res">
+      <InstagramIcon className="icon_connect icon-connect-res"/>
+      </a>
+      <div className="dot1 dot-res">.</div>
+      <a href="https://www.linkedin.com/in/anshu-joshi-9080b6223/" style={{ color: 'grey' }} className="connect-res">
+      <LinkedInIcon className="icon_connect icon-connect-res"/>
+      </a>
+      <div className="dot3 dot-res">.</div>
+      <a href="https://github.com/ImAnshuJoshi" style={{ color: 'grey' }} className="connect-res">
+      <GitHubIcon className="icon_connect icon-connect-res"/>
+      </a>
+          </div>
+          <div className="btn-contact">
+            <button navigation={<Contactme/>}>Resume</button>
+          </div>
+          </div>
     </div>
   )
 }

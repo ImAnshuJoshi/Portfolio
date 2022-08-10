@@ -9,7 +9,8 @@ import emailjs from '@emailjs/browser';
 function Contactme() {
   const form = useRef();
   function sendEmail(e){
-    emailjs.sendForm('gmail', 'template_ppq410q', form.current, 'iWxx2qNPr0xxujnnI')
+    e.preventDefault();
+    emailjs.sendForm('service_gbixatt', 'template_5iog1od', form.current, 'iWxx2qNPr0xxujnnI')
     .then((result) => {
         console.log(result.text);
     }, (error) => {
@@ -55,7 +56,7 @@ function Contactme() {
           </div>
         </div>
         <div className="sendmsg">
-          <form action="" onSubmit={sendEmail} ref={form}>
+          <form action="" ref={form} onSubmit={sendEmail} >
           <div className="contact-right name-input" name="name">
           Your Name
           <input type="text" className="contact-right-input email-input" name="from_name" />

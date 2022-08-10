@@ -26,6 +26,7 @@ function education() {
               <li>O</li>
               <li className="dot1">.</li>
               <li>N</li>
+              <li className="dot2">.</li>
             </ul>
           </div>
           <div style={{color:'white'}}>

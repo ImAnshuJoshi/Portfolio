@@ -133,9 +133,11 @@ function Home() {
       <GitHubIcon className="icon_connect icon-connect-res"/>
       </a>
           </div>
+            <a href="./assets/AnshuResume.pdf" download style={{textDecoration: 'none'}}>
           <div className="btn-contact">
             <button navigation={<Contactme/>}>Resume</button>
           </div>
+            </a>
           </div>
     </div>
   )

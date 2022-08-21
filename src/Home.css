@@ -340,15 +340,14 @@
         }
         .connect-res{
             background: none;
-            width:70vw;
         }
         .connect-res-div{
             background:none;
             display: flex;
             flex-direction: row;
+            justify-content: center;
             margin-top:30px;
-            /* max-width:70vw; */
-            width:70vw;
+            max-width:70vw;
         }
         .dot-res{
             background:none;

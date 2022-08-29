@@ -267,7 +267,8 @@
         .responsive-card{
             display: block;
             z-index:4;
-            height:48vh;
+            height:auto;
+            padding-bottom: 30px;
             width:70vw;
             background-color: white;
             border-radius: 4%;
@@ -316,13 +317,12 @@
             /* width:35px; */
             display: flex;
             justify-content: center;
-
         }
         .icon_connect-res{
             background: none;
             border: 3px solid #FFF;
             border-radius: 18px;
-          
+            margin:-10px;
             /* box-shadow: 0 0 0 7px rgba( 255, 255, 255, 0.25 ); */
         }
         .contactbtn-res{
@@ -378,4 +378,10 @@
             /* margin-top:20px; */
             /* margin */
         }
+
 }
+    /* @media only screen and (max-width: 375px){
+        InstagramIcon{
+            font-size: 10px;
+        }
+    } */

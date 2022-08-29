@@ -122,18 +122,20 @@ function Home() {
           </div>
           <div className="connect-res-div">
           <a href="https://www.instagram.com/imanshujoshi/" style={{ color: 'grey' }} className="connect-res">
-      <InstagramIcon className="icon_connect icon-connect-res"/>
+      <InstagramIcon className="icon_connect icon-connect-res" style={{fontSize:"20px"}}/>
       </a>
       <div className="dot1 dot-res">.</div>
       <a href="https://www.linkedin.com/in/anshu-joshi-9080b6223/" style={{ color: 'grey' }} className="connect-res">
-      <LinkedInIcon className="icon_connect icon-connect-res"/>
+      <LinkedInIcon className="icon_connect icon-connect-res" style={{fontSize:"20px"}}/>
       </a>
       <div className="dot3 dot-res">.</div>
       <a href="https://github.com/ImAnshuJoshi" style={{ color: 'grey' }} className="connect-res">
-      <GitHubIcon className="icon_connect icon-connect-res"/>
+      <GitHubIcon className="icon_connect icon-connect-res" style={{fontSize:"20px"}}/>
       </a>
           </div>
-            <a href="./assets/AnshuResume.pdf" download style={{textDecoration: 'none'}}>
+            <a href="./assets/AnshuResume.pdf" 
+            onclick="window.open('AnshuResume.pdf')"
+            download="AnshuResume.pdf" style={{textDecoration: 'none'}}>
           <div className="btn-contact">
             <button navigation={<Contactme/>}>Resume</button>
           </div>
